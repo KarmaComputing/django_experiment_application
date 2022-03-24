@@ -1,0 +1,29 @@
+{% load static %}
+
+{% block title %} Manager's HomePage {% endblock %}
+
+</br>
+</br>
+{% if user.is_authenticated %}
+  Hi {{ user.username }} Please choose a plan 
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+{% endif %}
+
+<p>Available Rugby Fields List:
+<ol>
+<li>Ricoh Arena</li>
+<li>Ashton Gate</li>
+<li>Welford Road</li>
+<li>Brentford Community Stadium</li>
+<li>Kingsholm Stadium</li>
+<li>Gloucester	Gloucester	</li>
+<li>Franklin's Gardens</li>
+<li>Twickenham Stoop</li>
+<li>Recreation Ground</li>
+<li>Sandy Park</li>
+<li>Sixways Stadium</li>
+<li>AJ Bell Stadium</li>
+<li>Kingston Park</li>
+<li>Allianz Park</li>
+</ol>
+</p>

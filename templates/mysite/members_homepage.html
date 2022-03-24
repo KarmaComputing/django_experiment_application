@@ -1,0 +1,12 @@
+{% load static %}
+{% block title %} This is the members homepage{% endblock %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+{% endif %}
+<body>
+<p>
+This week Rugby Field is Ricoh Arena
+<li>Date: 11/11/2022, 7:00 PM</li>
+</p>
+</body>

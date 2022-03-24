@@ -1,0 +1,14 @@
+venv/
+*.sql
+*.swp
+*.pyc
+__pycache__
+.pytest_cache/
+.env
+*.db
+.mypy_cache
+.project
+.pylintrc
+node_modules
+.env
+db.sqlite3
